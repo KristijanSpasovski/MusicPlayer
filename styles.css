@@ -1,18 +1,18 @@
 :root {
   --primary-color: #dfdfe2;
   --secondary-color: #ffffff;
-  --app-background-color: #4d4d62;
-  --background-color: #1b1b32;
-  --foreground-color: #3b3b4f;
-  --highlight-color: #f1be32;
+  --app-background-color: #283034;
+  --background-color: #feffff1b;
+  --foreground-color: #1a1a1e;
+  --highlight-color: #00f6fb;
 
   /* font sizes */
-  --root-font-size: 16px;
+  --root-font-size: 20px;
   font-size: var(--root-font-size);
 
   /* font-families */
-  --font-headline: "Roboto Mono", monospace;
-  --font-family: "Lato", sans-serif;
+  --font-headline: "League Spartan", sans-serif;
+  --font-family: "League Spartan", sans-serif;
 }
 
 *,
@@ -22,18 +22,18 @@
 }
 
 body {
-  background-color: var(--app-background-color);
+  background-color: #222121;
   color: var(--primary-color);
   font-family: var(--font-family);
 }
 
 h1 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 1.6;
 }
 
 h2 {
-  font-size: var(--root-font-size);
+  font-size: 1.5rem;
 }
 
 ul {
@@ -54,6 +54,7 @@ ul {
   width: 450px;
   background-color: var(--background-color);
   border: 3px solid var(--foreground-color);
+  border-radius: 10px;
 }
 
 .player {
@@ -73,14 +74,6 @@ ul {
   padding: 0 5px;
   width: 100%;
   height: 30px;
-  background-color: var(--foreground-color);
-}
-
-.parallel-lines {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 6px;
-  padding: 0 5px;
 }
 
 .parallel-lines > div {
@@ -102,14 +95,13 @@ ul {
   background-color: var(--foreground-color);
   width: 430px;
   height: 200px;
-  column-gap: 13px;
+  column-gap: 20px;
   align-items: center;
   justify-content: center;
 }
 
 #player-album-art {
-  background-color: var(--secondary-color);
-  border: 6px solid var(--background-color);
+  background-color: var(--foreground-color);
 }
 
 #player-album-art img {
@@ -136,7 +128,7 @@ ul {
 }
 
 .playing > svg {
-  fill: var(--highlight-color);
+  fill: var(--primary-color);
 }
 
 .player-buttons {
@@ -152,20 +144,24 @@ button {
   font-size: var(--root-font-size);
   outline-color: var(--highlight-color);
   text-align: center;
+  transition: all 0.3s;
 }
 
 .playlist-song {
-  outline-color: var(--highlight-color);
+  transition: all 0.3s;
 }
 
 .playlist li:not(:last-child) {
   border-bottom: 1px solid var(--background-color);
 }
 
-button:focus,
-.playlist-song:focus {
-  outline-style: dashed;
-  outline-width: 2px;
+#previous:hover,
+#play:hover,
+#pause:hover,
+#next:hover,
+#shuffle:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 4px #ffffff);
 }
 
 /* Playlist */
@@ -224,7 +220,7 @@ button:focus,
 }
 
 #player-song-artist {
-  color: var(--highlight-color);
+  color: #00f7fba5;
   font-size: 0.75rem;
 }
 
@@ -263,7 +259,7 @@ button:focus,
 
 .playlist-song-delete:hover circle,
 .playlist-song-delete:focus circle {
-  fill: #ff0000;
+  fill: #ff00005d;
 }
 
 @media (max-width: 700px) {
