@@ -8,7 +8,7 @@ const allSongs = [
   {
     id: 0,
     title: "Snow",
-    artist: "Dubdown",
+    artist: "Dubdwn",
     duration: "2:03",
     src: "assets/songs/DubdownSnow.mp3",
   },
@@ -22,21 +22,21 @@ const allSongs = [
   {
     id: 2,
     title: "Goldn",
-    artist: "Prazkhanal",
+    artist: "Prazkkh",
     duration: "2:39",
     src: "assets/songs/PrazkhanalGoldn.mp3",
   },
   {
     id: 3,
     title: "Into The Night",
-    artist: "Prazkhanal",
+    artist: "Prazkh",
     duration: "2:20",
     src: "assets/songs/PrazkhanalIntoTheNight.mp3",
   },
   {
     id: 4,
     title: "Kathmanud",
-    artist: "Prazkhanal",
+    artist: "Prazkh",
     duration: "2:40",
     src: "assets/songs/PrazkhanalKathmanud.mp3",
   },
